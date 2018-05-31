@@ -32,7 +32,7 @@ FROM microsoft/dotnet-nightly:2.0.7-sdk-2.1.105-nanoserver-1709
 
 # Set up environment
 ENV ASPNETCORE_URLS http://+:80
-ENV ASPNETCORE_PKG_VERSION 2.0.7
+ENV ASPNETCORE_PKG_VERSION 2.0.8
 
 # Install node, bower, and git
 COPY --from=installer-env ["nodejs", "C:\\Program Files\\nodejs"]
