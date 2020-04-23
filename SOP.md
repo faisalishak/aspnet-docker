@@ -89,7 +89,7 @@ Controller :
 > Terkait template source code ini bisa minta ke Saeful Rahman atau Faisal Ishak
 
 #### 5. Constant Variable .ENV
-- terkait ini anda dapat menyimpat settingan seperti  **base url, secret string ** dan lain"
+- terkait ini anda dapat menyimpat settingan seperti  **base url, secret string** dan lain"
 ```
 BASE_URL=https://rasioteknologi.com
 BASE_URL_API=https://rasioteknologi.com/api/v1/
