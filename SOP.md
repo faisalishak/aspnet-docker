@@ -66,13 +66,13 @@ Controller :
 
 
 #### 3. Naming Format
-- Penamaan variable menggunakan **chamel style**, ex : **$barang, $totalBarang, $firstName** 
-- Penamaan function/method menggunakan **chamel style**, ex : **getBarang(), calculate()**
-- Penamaan Response json menggunakan **underscore style**, ex : **first_name, last_name, address** 
-- Penamaan file views menggunakan **strip style**, ex : **print-sertifikat.blade.php, profile.blade.php**
-- Penamaan Controller **Capitalize first word**, ex : **BarangController.php, PenjualanBarangController.php, InventoryBarangController.php**
-- Penamaan Midleware **Capitalize first word**, ex : **CorsValidationMiddleware.php**
-- Penamaan route menggunakan **strip style**, ex :
+- Penamaan **variable** menggunakan **chamel style**, ex : **$barang, $totalBarang, $firstName** 
+- Penamaan **function/method** menggunakan **chamel style**, ex : **getBarang(), calculate()**
+- Penamaan **Response json** menggunakan **underscore style**, ex : **first_name, last_name, address** 
+- Penamaan **file views** menggunakan **strip style**, ex : **print-sertifikat.blade.php, profile.blade.php**
+- Penamaan **Controller** menggunakan **Capitalize first word**, ex : **BarangController.php, PenjualanBarangController.php, InventoryBarangController.php**
+- Penamaan **Midleware** menggunakan **Capitalize first word**, ex : **CorsValidationMiddleware.php**
+- Penamaan **route** menggunakan **strip style**, ex : **/admin/barang/print-invoice**
  ```php
  $router->group(['prefix' => 'admin'], function() use ($router){
     $router->group(['prefix' => 'barang'], function() use ($router){
