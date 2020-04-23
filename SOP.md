@@ -28,6 +28,7 @@
  ```sh 
   $  git clone https://github.com/faisalishak/project-name.git
   $  composer install
+  $  cd project-name
   buat file .env dan setting sesuai kebutuhan 
   $  php artisan key:generate
   $  php artisan serve
@@ -78,9 +79,9 @@ Controller :
     $router->group(['prefix' => 'barang'], function() use ($router){
         $router->get('/print-invoice', 'Admin\BarangController@printInvoice');
         $router->get('/', 'Admin\BarangController@index');
-        $router->get('/{id}', 'Pos\DashboardController@show');
-        $router->put('/{id}', 'Pos\DashboardController@update');
-        $router->delete('/{id}', 'Pos\DashboardController@destroy');
+        $router->get('/{id}', 'Pos\BarangController@show');
+        $router->put('/{id}', 'Pos\BarangController@update');
+        $router->delete('/{id}', 'Pos\BarangController@destroy');
     });
 });
 ```
