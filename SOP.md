@@ -13,7 +13,7 @@
   - Postman
 
 ### Memulai Project
-> Dalam SOP kali ini kita menggunakan framework **Laravel** sebagai contoh
+> Dalam SOP kali ini kita bangun dalam versi framework **Laravel** 
 #### 1. Inisialisasi Project 
   - Download dan Install Composer 
   - Install Laravel 
