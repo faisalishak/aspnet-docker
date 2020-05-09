@@ -119,6 +119,42 @@ return response()->json(company, 200);
 > Karena tidak usah mengubah banyak url di setiap file cukup mengubah satu file .ENV saja
 
 
+#### 6. Transaction
+- Gunakan transaction di setiap fungsi **tambah, update, delete** data, berikut ini contoh transcation, jangan lupa di-bundle dengan error handling (**try catch**)
+
+```php
+public function updateBarang($id, Request $request){
+  try{
+    DB::beginTransaction();
+      
+    /**  
+     simpan kode update, insert dll disini 
+    */
+      
+    DB::commit();
+  }catch(\Exception $e){
+    DB::rollback();
+        return view('admin.barang.update')->with(['error' => 'Oops, terjadi kesalahan silahkan coba lagi']);
+  }
+}
+
+public function createBarang($id, Request $request){
+  try{
+    DB::beginTransaction();
+      
+    /**  
+     simpan kode update, insert dll disini 
+    */
+      
+    DB::commit();
+  }catch(\Exception $e){
+    DB::rollback();
+        return view('admin.barang.create')->with(['error' => 'Oops, terjadi kesalahan silahkan coba lagi']);
+  }
+} 
+```
+
+
 
 
 
